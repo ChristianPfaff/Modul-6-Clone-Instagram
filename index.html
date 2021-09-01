@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Übung Instagram</title>
+    <link rel="stylesheet" href="instagram.css" />
+    <script src="instagram.js"></script>
+  </head>
+  <body id="body" >
+    <div class="frame-2 bg-2"></div>
+    <div id="top-container">
+      <div class="menu-bar bg-1">
+        <img class="img-2" src="img/instagram-1594387_640.png" />
+        <input class="input-style bg-1 " type="text" placeholder="Suchen" />
+        <div class="icon-right">
+          <img class="img-1" src="img/home-7-48.png" />
+          <img class="img-1" src="img/instagram4.png" />
+          <img class="img-1" src="img/favorite-4-48.png" />
+          <img class="img-4" src="img/profile.png" />
+        </div>
+        
+      </div>
+      
+      <div id="post" class="style-8 "></div> 
+      </div>
+    </div>
+
+    <div id="dialog" class="dialog-bg d-none">
+      <div class="dialogStyle">
+          <h1>Neue Post starten</h1>
+          <input id="id-inputNewPost-1" type="text" placeholder="Dein Name?">
+          <input id="id-inputNewPost-2" type="number"  placeholder="Bild-Nr?" min="1" max="3">
+          <input id="id-inputNewPost-3" type="text" placeholder="Ort?"> 
+          <textarea id="id-inputNewPost-4" class="txt-Area" maxlength="110" placeholder="Headline?"></textarea>
+          <span>Bitte Schriftfarbe für Headline wählen:</span>
+          <div>
+            <input type="radio" id="w" name="colorHeadline" value="white" onclick="getRadioBtnValue()">
+              <label for="white"> Weiss</label> 
+            <input type="radio" id="b" name="colorHeadline" value="black" onclick="getRadioBtnValue()">
+              <label for="b"> Schwarz</label> 
+            </div>
+          <button onclick="addNewPost()" >Übernehmen</button>
+          <button onclick="closeDialog()">Abbrechen</button>
+      </div>
+    </div>    
+    <button class="btn-new-post" onclick="creatNewPost()">Neue Post</button>
+    
+    
+  </body>
+</html>
+
+
+
+
